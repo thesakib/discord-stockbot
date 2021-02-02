@@ -5,16 +5,12 @@ astunparse==1.6.3
 async-timeout==3.0.1
 attrs==19.3.0
 backcall==0.1.0
-beautifulsoup4==4.9.3
-bleach @ file:///home/conda/feedstock_root/build_artifacts/bleach_1588608214987/work
 bs4==0.0.1
 cachetools==4.1.1
 certifi==2020.4.5.1
 cffi==1.14.0
 chardet==3.0.4
 chromedriver-install==1.0.3
-conda==4.8.3
-conda-package-handling==1.6.0
 cryptography==2.8
 cycler==0.10.0
 decorator==4.4.2
