@@ -28,8 +28,6 @@ grpcio==1.33.2
 h5py==2.10.0
 idna==2.8
 iexfinance==0.5.0
-ipython @ file:///home/conda/feedstock_root/build_artifacts/ipython_1588362967322/work
-ipython-genutils==0.2.0
 jedi==0.17.0
 Jinja2==2.11.2
 jsonschema==3.2.0
