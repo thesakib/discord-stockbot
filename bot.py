@@ -81,7 +81,7 @@ async def detailed_price(cntx, msg):
         return
 
 @bot.command(name='analyst',brief='Analyst suggestion command',description='Write \"!analyst\" followed by the symbol in upper-case for the latest analyst suggestions.')
-async def detailed_price(cntx, msg):
+async def analyst(cntx, msg):
     if cntx.author == bot.user:
         return
 
@@ -105,7 +105,7 @@ async def detailed_price(cntx, msg):
         return
 
 @bot.command(name='target',brief='Target prediction command', description ='\"!target\" followed by the symbol in upper-case for the 12 to 16 months price target prediction by the analyst')
-async def detailed_price(cntx, msg):
+async def target_price(cntx, msg):
     if cntx.author == bot.user:
         return
 
@@ -127,14 +127,14 @@ async def detailed_price(cntx, msg):
     else:
         return
 
-# @bot.command(name='help')
-# async def detailed_price(cntx):
-#     if cntx.author == bot.user:
-#         return
-#
-#         response = f"```\nWrite \"!full\" followed by the symbol in upper-case for detailed price information.\n\"!analyst\" followed by the symbol for the latest analyst suggestions\n\"!target\" followed by the symbol for the 12 to 16 months price target prediction by the analyst```"
-#
-#         await cntx.send(response)
+@bot.command(name='nick')
+async def nickname(cntx, msg):
+    if cntx.author == bot.user:
+        return
+
+        await cntx.author.edit(nick = msg)
+        response = f"{cntx.author.name} changed his nickname to {msg}"
+        await cntx.send(response)
 
 
 
