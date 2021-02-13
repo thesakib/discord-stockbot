@@ -133,7 +133,7 @@ async def nickname(cntx, nickname):
         return
 
     await cntx.author.edit(nick = nickname)
-    response = f"{cntx.author.name} changed his nickname to {nickname}"
+    response = f"{cntx.author.name} changed their nickname to {nickname}"
     await cntx.send(response)
 
 
