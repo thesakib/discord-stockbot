@@ -131,9 +131,11 @@ async def target_price(cntx, msg):
 async def nickname(cntx, msg):
     if cntx.author == bot.user:
         return
-
-    await msg.author.edit(nick = msg)
-    response = f"{cntx.author.name} changed his nickname to {msg}"
+    print(msg)
+    nickname = msg.content
+    print(nickname)
+    await msg.author.edit(nick = nickname)
+    response = f"{cntx.author.name} changed his nickname to {nickname}"
     await cntx.send(response)
 
 
