@@ -127,12 +127,12 @@ async def target_price(cntx, msg):
     else:
         return
 
-@bot.command(name='nick')
+@bot.command(name='nick',brief='Change nickname', description='Write \"!nick\" followed by the name you want to use as your nickname.')
 async def nickname(cntx, msg):
     if cntx.author == bot.user:
         return
 
-        await cntx.author.edit(nick = msg)
+        await msg.author.edit(nick = msg.content)
         response = f"{cntx.author.name} changed his nickname to {msg}"
         await cntx.send(response)
 
