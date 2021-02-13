@@ -132,9 +132,9 @@ async def nickname(cntx, msg):
     if cntx.author == bot.user:
         return
 
-        await msg.author.edit(nick = msg.content)
-        response = f"{cntx.author.name} changed his nickname to {msg}"
-        await cntx.send(response)
+    await msg.author.edit(nick = msg)
+    response = f"{cntx.author.name} changed his nickname to {msg}"
+    await cntx.send(response)
 
 
 
